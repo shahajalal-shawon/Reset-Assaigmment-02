@@ -14,7 +14,13 @@ ul > li > a {
 nav li {
   list-style: none;
 }
+.btn {
+  background-color: #ff5400;
+  padding: 15px 35px;
+  border: 0;
+}
 /* univarsal css styles */
+
 /* header styles */
 .header_left {
   display: flex;
@@ -29,16 +35,83 @@ nav li {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 30px;
+  /* margin-top: 30px; */
 }
 .header_left > h3 {
   font-size: 35px;
 }
 .header_right > ul {
   display: flex;
+  color: gray;
   font-weight: 400;
   gap: 50px;
   text-transform: uppercase;
 }
 .header_right a:hover {
   color: #ff5400;
+}
+/* banner part styles */
+.bannar {
+  background-image: linear-gradient(
+      to left,
+      rgba(6, 10, 48, 0.315),
+      rgba(37, 32, 36, 0.73)
+    ),
+    url("../Images/bannar.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+}
+.bannar_description {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.bannar_description h2 {
+  font-size: 55px;
+  color: white;
+  font-weight: 700;
+}
+.bannar_description p {
+  color: white;
+}
+/* .menu_list_item {
+  width: 75%;
+  background-color: #ff5400;
+  
+} */
+.popular_tour {
+  display: flex;
+
+  gap: 60px;
+  margin-top: 80px;
+}
+.popular_tour p {
+  margin-top: 15px;
+}
+.popular_tour_left_part h2 {
+  font-size: 55px;
+  font-weight: 700;
+}
+.popular_tour_left_part {
+  width: 60%;
+  padding-left: 20px;
+  /* background-color: #ff5400; */
+}
+.popular_tour_right_part {
+}
+/* mobile device responsive */
+@media screen and(max-width: 600px) {
+  .bannar {
+    width: 100%;
+    padding: 20px;
+  }
+  .bannar_description h2 {
+    font-size: 8px;
+  }
 }
