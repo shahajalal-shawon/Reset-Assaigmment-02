@@ -103,7 +103,6 @@ nav li {
 } */
 .popular_tour {
   display: flex;
-
   gap: 60px;
   margin-top: 80px;
 }
@@ -126,20 +125,34 @@ nav li {
 .first_row {
   margin-top: 40px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 50px;
 }
 .second_row {
   margin-top: 20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .thired_row {
   margin-top: 20px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
-
+/* why choose us section */
+/* news letter section styles */
+.newsletter {
+  display: flex;
+  gap: 20px;
+}
+.newsletter_left {
+  width: 45%;
+  padding: 60px;
+  border: 2px solid #ff5400;
+  border-radius: 20px;
+}
+#text_input {
+  padding: 15px 50px;
+}
 /* mobile device responsive */
 @media screen and(max-width: 600px) {
   .bannar {
