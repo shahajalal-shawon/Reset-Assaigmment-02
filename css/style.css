@@ -16,8 +16,24 @@ nav li {
 }
 .btn {
   background-color: #ff5400;
-  padding: 15px 35px;
+  padding: 15px 40px;
+  color: white;
+  font-size: 15px;
+  font-weight: 300;
   border: 0;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+.section_title {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.section_title h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
 }
 /* univarsal css styles */
 
@@ -103,8 +119,27 @@ nav li {
   padding-left: 20px;
   /* background-color: #ff5400; */
 }
-.popular_tour_right_part {
+/* choose your destination section styles */
+#choose_your_destination {
+  width: 1250px;
 }
+.first_row {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+}
+.second_row {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.thired_row {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
 /* mobile device responsive */
 @media screen and(max-width: 600px) {
   .bannar {
