@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 1320px;
+  font-family: "Poppins", sans-serif;
+  margin: 0 auto;
+}
+ul > li > a {
+  text-decoration: none;
+}
+nav li {
+  list-style: none;
+}
+/* univarsal css styles */
+/* header styles */
+.header_left {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  /* background-color: aqua; */
+}
+.header span {
+  color: #ff5400;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_left > h3 {
+  font-size: 35px;
+}
+.header_right > ul {
+  display: flex;
+  font-weight: 400;
+  gap: 50px;
+  text-transform: uppercase;
+}
+.header_right a:hover {
+  color: #ff5400;
+}
