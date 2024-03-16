@@ -145,13 +145,39 @@ nav li {
   gap: 20px;
 }
 .newsletter_left {
-  width: 45%;
+  width: 41%;
   padding: 60px;
   border: 2px solid #ff5400;
   border-radius: 20px;
 }
+.newsletter_left p {
+  /* margin-top: 20px; */
+  border-bottom: 2px solid gray;
+}
 #text_input {
-  padding: 15px 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 15px;
+  width: 420px;
+  border: 0;
+  background-color: rgb(192, 185, 185);
+}
+#email_input {
+  padding: 15px;
+  width: 420px;
+  border: 0;
+  background-color: rgb(192, 185, 185);
+}
+#btn-primary {
+  width: 420px;
+  background-color: #ff5400;
+  padding: 15px 40px;
+  color: white;
+  font-size: 15px;
+  font-weight: 300;
+  border: 0;
+  margin-top: 15px;
+  border-radius: 10px;
 }
 /* mobile device responsive */
 @media screen and(max-width: 600px) {
