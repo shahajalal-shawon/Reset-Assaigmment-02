@@ -42,7 +42,6 @@ nav li {
   display: flex;
   gap: 10px;
   align-items: center;
-  /* background-color: aqua; */
 }
 .header span {
   color: #ff5400;
@@ -124,9 +123,13 @@ nav li {
 }
 .first_row {
   margin-top: 40px;
-  display: flex;
-  justify-content: space-between;
-  gap: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+.first_row_child img {
+  width: 100%;
+  height: 100%;
 }
 .second_row {
   margin-top: 20px;
@@ -139,19 +142,62 @@ nav li {
   justify-content: space-between;
 }
 /* why choose us section */
+/* Deals and discount section */
+.discount_banner {
+  position: relative;
+}
+.discount_offer {
+  padding: 2.5rem;
+  position: absolute;
+  top: 60px;
+  right: 130px;
+  height: 380px;
+  width: 550px;
+  background-color: #ffffff;
+  opacity: 0.9;
+  border-radius: 15px;
+}
+.cardTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+}
+.cardTitle p {
+  align-items: flex-start;
+}
+.cardIntro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* A simple perfect place section */
+.Simple_perfect_place {
+  display: flex;
+  gap: 50px;
+}
+.Simple_perfect_place_left {
+  width: 45%;
+}
+.Simple_perfect_place_left p {
+  margin-top: 10px;
+}
+.Simple_perfect_place_left h2 {
+  font-size: 45px;
+}
 /* news letter section styles */
 .newsletter {
   display: flex;
   gap: 20px;
+  margin-top: 80px;
 }
 .newsletter_left {
-  width: 41%;
-  padding: 60px;
+  width: 50%;
+  padding: 85px;
   border: 2px solid #ff5400;
   border-radius: 20px;
 }
 .newsletter_left p {
-  /* margin-top: 20px; */
   border-bottom: 2px solid gray;
 }
 #text_input {
@@ -179,13 +225,100 @@ nav li {
   margin-top: 15px;
   border-radius: 10px;
 }
+/* footer section styles */
+.footer {
+  height: 500px;
+  background-color: rgb(240, 237, 232);
+}
+.fotter_header {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.hide {
+  display: none;
+}
+
 /* mobile device responsive */
-@media screen and(max-width: 600px) {
+@media screen and (max-width: 600px) {
   .bannar {
     width: 100%;
     padding: 20px;
   }
-  .bannar_description h2 {
-    font-size: 8px;
+  .bannar_description h2,
+  .popular_tour_left_part h2,
+  .section_title h2,
+  .Simple_perfect_place_left h2 {
+    font-size: 25px;
+  }
+  .bannar_description p {
+    font-size: 13px;
+  }
+  .popular_tour_left_part,
+  .Simple_perfect_place_left,
+  .Simple_perfect_place_right,
+  .newsletter_left,
+  .newsletter {
+    width: 100%;
+    padding: 5px;
+  }
+  .Simple_perfect_place_right img {
+    width: 100%;
+  }
+
+  .popular_tour_right_part img {
+    width: 100%;
+    padding: 5px;
+  }
+  .popular_tour {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .first_row,
+  .second_row,
+  .thired_row,
+  .Simple_perfect_place,
+  .newsletter {
+    flex-direction: column;
+  }
+  .newsletter_right img {
+    width: 100%;
+    padding: 5px;
+  }
+  .section_title p {
+    font-size: 13px;
+  }
+
+  .second_row img {
+    width: full;
+  }
+  #choose_your_destination img {
+    width: 100%;
+    padding: 5px;
+  }
+  #email_input,
+  #text_input,
+  #btn-primary {
+    width: 100%;
+  }
+  .discount_banner img {
+    width: 100%;
+    height: 500px;
+  }
+  .discount_offer {
+    height: 300px;
+    width: 300px;
+    right: 5px;
+    top: 180px;
+  }
+  .cardIntro {
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+  }
+  .cardIntro span {
+    margin-top: 5px;
+  }
+  .deals_and_discount {
+    padding: 5px;
   }
 }
