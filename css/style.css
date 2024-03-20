@@ -227,13 +227,37 @@ nav li {
 }
 /* footer section styles */
 .footer {
-  height: 500px;
+  margin-top: 80px;
+  height: 450px;
   background-color: rgb(240, 237, 232);
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  padding: 100px 150px;
 }
 .fotter_header {
   display: flex;
   gap: 10px;
   align-items: center;
+}
+.footer p {
+  margin-top: 20px;
+  width: 800px;
+  margin-bottom: 20px;
+}
+.footer_icon {
+  border-bottom: 2px solid black;
+  width: 800px;
+  font-size: 30px;
+  color: black;
+}
+.footer_heading {
+  font-size: 48px;
+}
+.footer_heading span {
+  color: #ff5400;
 }
 .hide {
   display: none;
@@ -248,7 +272,9 @@ nav li {
   .bannar_description h2,
   .popular_tour_left_part h2,
   .section_title h2,
-  .Simple_perfect_place_left h2 {
+  .Simple_perfect_place_left h2,
+  .footer h3,
+  .header_left h3 {
     font-size: 25px;
   }
   .bannar_description p {
@@ -258,7 +284,8 @@ nav li {
   .Simple_perfect_place_left,
   .Simple_perfect_place_right,
   .newsletter_left,
-  .newsletter {
+  .newsletter,
+  .footer {
     width: 100%;
     padding: 5px;
   }
@@ -320,5 +347,12 @@ nav li {
   }
   .deals_and_discount {
     padding: 5px;
+  }
+  .footer p {
+    width: 100%;
+    padding: 10px;
+  }
+  .footer_icon {
+    width: 100%;
   }
 }
